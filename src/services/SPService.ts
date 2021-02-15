@@ -53,7 +53,7 @@ export class SPService {
     }
   }
 
-  public async getBirthdays(webAbsoluteUrl: string): Promise<{ Id: number; Email: string; Puesto: string; Nombre_x0028_s_x0029_: string; Materno: string; Paterno: string; Cumplea_x00f1_os: string; }[]> {
+  public async getBirthdays(webAbsoluteUrl: string): Promise<{ Id: number; Email: string; Puesto: string; Nombre_x0028_s_x0029_: string; Materno: string; Paterno: string; FechadeIngreso: string; }[]> {
     const startDate = moment().startOf("week");
     const limitDate = moment().endOf("week");
     const client = new SPHttpClient();
@@ -71,14 +71,14 @@ export class SPService {
       const inf = i + 1, sup = i + step;
       let filterString = `Id ge ${inf} and Id le ${sup}`;
       const promise = sp.web.lists.getByTitle("Empleados")
-        .items.select("Id, Nombre_x0028_s_x0029_, Materno, Paterno, Puesto, Cumplea_x00f1_os")
+        .items.select("Id, Nombre_x0028_s_x0029_, Materno, Paterno, Puesto, FechadeIngreso")
         .filter(filterString).get();
       promises.push(promise);
     }
 
     const results = await Promise.all(promises);
-    return [].concat(...results).filter((item: { Id: number; Email: string; Puesto: string; Nombre_x0028_s_x0029_: string; Materno: string; Paterno: string; Cumplea_x00f1_os: string; }) => {
-      const birthdayThisYear = moment(item.Cumplea_x00f1_os).year(startDate.year()).startOf("day");
+    return [].concat(...results).filter((item: { Id: number; Email: string; Puesto: string; Nombre_x0028_s_x0029_: string; Materno: string; Paterno: string; FechadeIngreso: string; }) => {
+      const birthdayThisYear = moment(item.FechadeIngreso).year(startDate.year()).startOf("day");
       return birthdayThisYear.valueOf() >= startDate.valueOf() && birthdayThisYear.valueOf() <= limitDate.valueOf();
     });
   }
