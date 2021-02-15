@@ -1,19 +1,19 @@
-# Birthdays
+# Anniversaries
 
 ## Summary
-The Web Part Birthdays shows the upcoming birthdays in the company, the web part reads birthdays from a list located on the tenant's root site with title "Birthdays."
+The Web Part Anniversaries shows the upcoming Anniversaries in the company, the web part reads Anniversaries from a list located on the tenant's root site with title "Anniversaries."
 
 Now is possible to the user select an image for the background in the properties of the webpart.
 
 
-There is an Azure function available that get AAD user birthdays, this function creates a list on the tenant root site, if it does not exist.
-See the local.settings.json for details on the required application variable located in SyncUsersBirthdaysFunction folder.
+There is an Azure function available that get AAD user Anniversaries, this function creates a list on the tenant root site, if it does not exist.
+See the local.settings.json for details on the required application variable located in SyncUsersAnniversariesFunction folder.
 
-But you can synchronize the Birthdays list with other applications HR Systems, or other sources
+But you can synchronize the Anniversaries list with other applications HR Systems, or other sources
 
-![Birthdays Web Part](./assets/birthdays.gif)
+![Anniversaries Web Part](./assets/Anniversaries.gif)
 
-![Birthdays Web Part](./assets/birthdays.png)
+![Anniversaries Web Part](./assets/Anniversaries.png)
 
 
 ## Used SharePoint Framework Version 
@@ -27,13 +27,13 @@ But you can synchronize the Birthdays list with other applications HR Systems, o
 
 ## Prerequisites
  
-Existing list in tenant root site, with the Title "Birthdays"  and columns:
+Existing list in tenant root site, with the Title "Anniversaries"  and columns:
 
 Column Internal Name|Type|Required| comments
 --------------------|----|--------|----------
 JobTitle| Text| no|
 Birthday| DateTime | true|
-userAADGUID| Text| no | required if used Azure Function to get Birthdays from AAD
+userAADGUID| Text| no | required if used Azure Function to get Anniversaries from AAD
 Title| Text| true
 email| Text| true
 
@@ -72,7 +72,7 @@ Version|Date|Comments
 
 ## Features
 This project contains sample Birthday web parts built on the SharePoint Framework using React
-and an Azure Function to get user Birthdays from AAD.
+and an Azure Function to get user Anniversaries from AAD.
 This sample illustrates the following concepts on top of the SharePoint Framework:
 - using React for building SharePoint Framework client-side web parts
 - using React components for building Birthday web part
@@ -81,5 +81,5 @@ This sample illustrates the following concepts on top of the SharePoint Framewor
 - using @PnP/PnPjs to create a List, add, update, delete Items.
  
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/react-birthdays" />
+<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/react-Anniversaries" />
 

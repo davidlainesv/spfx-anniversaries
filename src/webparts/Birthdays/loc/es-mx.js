@@ -1,9 +1,9 @@
 define([], function () {
   return {
-    "PropertyPaneDescription": "¡Feliz Cumpleaños!",
+    "PropertyPaneDescription": "¡Feliz Aniversario!",
     "BasicGroupName": "Propiedades",
     "DescriptionFieldLabel": "Título",
-    "NumberUpComingDaysLabel": 'Número de cumpleaños por venir',
+    "NumberUpComingDaysLabel": 'Número de aniversarios por venir',
     "BackgroundImageLabel": 'Imagen de fondo'
   }
 });

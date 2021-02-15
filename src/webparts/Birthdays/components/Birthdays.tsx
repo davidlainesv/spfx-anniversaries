@@ -76,7 +76,7 @@ export default class Birthdays extends React.Component<IBirthdaysProps, IBirthda
       _otherMonthsBirthdays = [];
       _dezemberBirthdays = [];
       for (const item of listItems) {
-        this._users.push({ key: item.Id.toString(), userName: [item.Nombre_x0028_s_x0029_, item.Paterno].join(" "), userEmail: item.Email, jobDescription: item.Puesto, birthday: moment(item.Cumplea_x00f1_os).year(moment().year()).local().format() });
+        this._users.push({ key: item.Id.toString(), userName: [item.Nombre_x0028_s_x0029_, item.Paterno].join(" "), userEmail: item.Email, jobDescription: item.Puesto, birthday: moment(item.FechadeIngreso).year(moment().year()).local().format() });
       }
       // Sort Items by Birthday MSGraph List Items API don't support ODATA orderBy
       // for end of year teste and sorting
