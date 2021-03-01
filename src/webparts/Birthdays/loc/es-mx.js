@@ -1,6 +1,6 @@
 define([], function () {
   return {
-    "PropertyPaneDescription": "¡Feliz Aniversario!",
+    "PropertyPaneDescription": "Aniversarios",
     "BasicGroupName": "Propiedades",
     "DescriptionFieldLabel": "Título",
     "NumberUpComingDaysLabel": 'Número de aniversarios por venir',

@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
   "manifestVersion": "1.2",
   "packageName": "HappyBirdthay",
-  "id": "e629ef30-a9ec-4713-b39a-2cfa8b323902",
+  "id": "214e6aea-f5bb-4793-937a-ca4728f302a4",
   "version": "0.1",
   "developer": {
     "name": "SPFx + Teams Dev",
@@ -11,11 +11,11 @@
     "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
   },
   "name": {
-    "short": "HappyBirdthay"
+    "short": "Anniversaries"
   },
   "description": {
-    "short": "HappyBirdthay description",
-    "full": "HappyBirdthay description"
+    "short": "Anniversaries description",
+    "full": "Anniversaries description"
   },
   "icons": {
     "outline": "tab20x20.png",
@@ -24,7 +24,7 @@
   "accentColor": "#004578",
   "configurableTabs": [
     {
-      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=e629ef30-a9ec-4713-b39a-2cfa8b323902",
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=214e6aea-f5bb-4793-937a-ca4728f302a4",
       "canUpdateConfiguration": false,
       "scopes": [
         "team"

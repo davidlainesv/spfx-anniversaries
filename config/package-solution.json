@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "happy-birdthay-client-side-solution",
-    "id": "57890dd1-b655-4ec8-85ec-e47a9b696e7c",
+    "name": "happy-anniversary-client-side-solution",
+    "id": "1b6c84b7-e4fe-42d0-ae5a-280f7ad56b8d",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false
   },
   "paths": {
-    "zippedPackage": "solution/birthdays.sppkg"
+    "zippedPackage": "solution/anniversaries.sppkg"
   }
 }
